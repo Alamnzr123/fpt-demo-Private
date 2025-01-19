@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "bea8c416-a325-483c-8108-5b5a0d630c4c",
+		"name": "FPT-DEMO",
+		"description": "Test for FPT Software.\n\nBackend : Java Spring Boot\n\nFrontend : React\n\nAuthor : RAHMAD ALAMSYAH NAZARUDDIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15530359"
+	},
+	"item": [
+		{
+			"name": "POST DATA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ArtistID\" : 3,\r\n    \"artistName\" : \"Maroon 5\",\r\n    \"albumName\" : \"Animals\",\r\n    \"imageURL\" : \"https://th.bing.com/th/id/OIP.pOVV7IxT4OUH2C8vtzY6YQHaHT?rs=1&pid=ImgDetMain\",\r\n    \"releaseDate\" : \"2025-04-14\",\r\n    \"price\": 17.3,\r\n    \"sampleURL\" : \"http://www.noiseaddicts.com/samples_1w72b820/4202.mp3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DATA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT DATA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"artistName\" : \"Lisa RAWRRRR\",\r\n    \"albumName\" : \"Album-3\",\r\n    \"releaseDate\" : \"2025-04-14\",\r\n    \"price\": 17.3\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/employees/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DATA BY ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/employees/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE DATA",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/employees/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
